@@ -1,8 +1,15 @@
 # Milestone 1 — Community notes
 
 **Community:** r/cscareerquestions (https://www.reddit.com/r/cscareerquestions/)
-**Why this one:** <!-- one or two sentences, in your words -->
-**What I read:** <!-- e.g. 35 posts + top comments, sorted Top → This month, on <date> -->
+**Why this one:** I wanted a community where people talk about companies and
+what it's actually like to work there. r/cscareerquestions is public, very
+active, and its posts range from detailed, number-backed comparisons to pure
+venting, so there's real variation in how much evidence a post gives for its
+own claims.
+
+**What I read:** Read about 50 posts, sorted by Best (the page's active sort —
+not Top → This month), on 26 Oct 2026. Did not read comments, only the main
+post text.
 
 ## Candidate distinctions
 
