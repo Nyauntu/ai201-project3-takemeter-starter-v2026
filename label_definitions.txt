@@ -1,10 +1,9 @@
 # Your label definitions, one per line, as `label: definition`.
 #
-# Copy these from your README so the baseline is judged on exactly the
-# definitions you wrote. baseline.py reads this file.
-#
-# Delete the examples below and put yours in.
+# Copied from README.md so the baseline is judged on exactly these definitions.
+# baseline.py reads this file.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+evidence_backed: the main claim is supported by a specific, checkable fact (a number, dollar figure, named tool, count or named source) and the post does not ask what the poster should personally do
+hot_take: a confident, sweeping claim about the industry, AI, a company or a group of people with no specific checkable fact in support, or whose fact could be deleted without weakening the claim
+advice_request: the poster describes their own situation and asks an answerable question about a specific decision or task, even if the post contains specific facts
+vent: the poster expresses their emotional state about their own situation, with no answerable question and no checkable claim argued; generic closers like "any advice?" don't count as a question

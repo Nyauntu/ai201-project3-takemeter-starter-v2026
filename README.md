@@ -48,41 +48,64 @@
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
+Four labels. Every post gets exactly one. Labels describe the main post text only (comments were not read or collected).
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
+### `evidence_backed`
 
-### `label_one`
-
-**Definition:**
+**Definition:** The post's main claim is supported by a specific, checkable fact (a number, a dollar figure, a named tool, a count, a named source), and the post does not ask what the poster should personally do.
 
 **Example 1:**
->
+> "Airbnb Staff Offer": a full total-compensation breakdown (base, bonus %, RSU vesting schedule, sign-on, year-1 total).
 
 **Example 2:**
->
+> TODO: a second real post from r/cscareerquestions that shares data or information (an application tracker, an interview-loop breakdown, salary data) with no personal "what should I do" question.
 
-### `label_two`
+### `hot_take`
 
-**Definition:**
+**Definition:** A confident, sweeping claim about the industry, AI, a company, or a group of people (managers, recruiters, juniors) that offers no specific checkable fact in support, or whose facts fail the deletion test below.
 
 **Example 1:**
->
+> "AI is revolutionizing software by making it worse": flat claims such as "almost no one is writing code manually anymore," with no number or source.
 
 **Example 2:**
->
+> "Reddit pushing AI as a 'Programmer Replacement Service'": appeals to "all recent studies" and "known" CEO behaviour without naming a single study or source.
+
+### `advice_request`
+
+**Definition:** The poster describes their own situation and asks an answerable question about a specific decision or task: something a reply could actually answer.
+
+**Example 1:**
+> "How do you job hunt during an internship?": three numbered questions about the poster's own upcoming job search.
+
+**Example 2:**
+> "How do you get a government CS job?": an explicit ask, with the poster's background given as context.
+
+### `vent`
+
+**Definition:** The poster expresses their emotional state about their own situation, with no answerable question and no checkable claim being argued. A generic closer such as "any advice?" or "can anyone help?" does not count as a question.
+
+**Example 1:**
+> "I'm so fucking tired of corporate bullshit getting in the way of actual engineering": pure frustration, no real ask.
+
+**Example 2:**
+> "AI has made me feel lost, I have lost my purpose and feel clueless": mainly emotional; the closing "can anyone help" is a plea, not an answerable question.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `evidence_backed` vs `advice_request`
 
-**The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+**The borderline post:** "Should I still continue?" (Spring Boot → AI-automation pivot). It gives specific facts (two years of Java/Spring Boot, a local market full of senior-only roles, more n8n/LLM-integration postings) and ends with a personal question.
 
+**The decision rule I used every time:** If a post asks an answerable question about what the poster should personally do, it is `advice_request`, even when it contains specific facts, because the facts are context for the question rather than the post's argument. `evidence_backed` is only for posts where the fact-backed claim is the point and no personal ask is attached. Under this rule, "Which job would you take?" (salary ranges for three offers, then "which should I take?") is `advice_request`.
 
+### Secondary rules
+
+- **`evidence_backed` vs `hot_take` (deletion test):** Mentally delete the fact from the post. If the main claim still stands just as strongly without it, the fact was decoration and the post is `hot_take`. If the claim falls apart without it, the post is `evidence_backed`. Example: "BLS data shows a 15% YoY drop in entry-level postings — the junior market is structurally broken" is `hot_take`, because "structurally broken" is asserted just as strongly with or without the statistic.
+- **`advice_request` vs `vent` (answerable-question test):** A post is `advice_request` only if its question names a specific decision or task a reply could answer ("should I take A or B?", "how do I get a government job?"). Generic closers ("any advice?", "can anyone help?") on an emotional post leave it as `vent`.
+
+### Collection note
+
+Because offer comparisons that end in a personal question count as `advice_request`, `evidence_backed` is expected to be the thinnest label. During collection I search for it deliberately (data posts, interview-process write-ups, salary shares) and watch that `advice_request` stays under the 70% cap.
 
 ---
 
