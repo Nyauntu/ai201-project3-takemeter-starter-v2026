@@ -58,7 +58,7 @@ Four labels. Every post gets exactly one. Labels describe the main post text onl
 > "Airbnb Staff Offer": a full total-compensation breakdown (base, bonus %, RSU vesting schedule, sign-on, year-1 total).
 
 **Example 2:**
-> TODO: a second real post from r/cscareerquestions that shares data or information (an application tracker, an interview-loop breakdown, salary data) with no personal "what should I do" question.
+> "Software postings are still near the bottom of the pack even with postings up overall": overall postings index at 103.8, hires rate 3.3%, quits rate 1.9%, openings per unemployed worker at 1.0 vs about 1.2 in 2019, AI-related postings over double their 2022 peak. Its closing question asks whether the numbers match what others see, which checks the facts rather than asking what the poster should do.
 
 ### `hot_take`
 
